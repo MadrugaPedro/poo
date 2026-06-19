@@ -88,8 +88,8 @@ public class GradeAnalyzer {
     public static int countGradesAtOrAboveAverage(int[] grades) {
         double average = calculateAverage(grades);
         int count = 0;
-        for (int grade : grades) {
-            if (grade >= average) {
+        for (int grade : grades){
+            if (grade >= average){
                 count++;
             }
         }
