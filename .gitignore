@@ -26,12 +26,10 @@ replay_pid*
 .vscode/
 target/
 lib/
-assignments/07-exams/2026.1-2-actor-export/diana-galdino/bin/
 **/fabricio-santana/
 
 .qodo/
 *.properties
-!examples/14-jdbc/src/demo/dvdrentalapp/src/main/resources/application.properties
 *.properties.local
 *.properties.supabase.DS_Store
 .DS_Store
