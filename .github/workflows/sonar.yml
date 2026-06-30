@@ -1,0 +1,92 @@
+name: SonarQube
+on:
+  workflow_dispatch:
+jobs:
+  sonarqube:
+    name: SonarQube
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: maven
+      - name: Compile Java code from examples and assignments (binaries for Sonar)
+        run: |
+          set +e
+          mkdir -p .sonar-binaries
+
+          # JUnit é necessário para compilar classes de teste que importam org.junit.*
+          JUNIT_JAR=".sonar-binaries/junit-platform-console-standalone-1.11.4.jar"
+          curl -sSL -o "$JUNIT_JAR" \
+            https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.11.4/junit-platform-console-standalone-1.11.4.jar
+
+          compile_maven_modules() {
+            local base_dir="$1"
+            if [ ! -d "$base_dir" ]; then
+              echo "⚠️ Diretório '$base_dir' não encontrado. Pulando Maven."
+              return
+            fi
+
+            find "$base_dir" -name pom.xml -print0 | while IFS= read -r -d '' pom; do
+              module_dir="$(dirname "$pom")"
+              echo "Compiling Maven module: $module_dir"
+              if (cd "$module_dir" && mvn -B -DskipTests compile); then
+                echo "✅ Compilado: $module_dir"
+              else
+                echo "⚠️ Falha ao compilar $module_dir (seguindo execução)"
+              fi
+            done
+          }
+
+          compile_plain_java() {
+            local base_dir="$1"
+            if [ ! -d "$base_dir" ]; then
+              echo "⚠️ Diretório '$base_dir' não encontrado. Pulando javac."
+              return
+            fi
+
+            find "$base_dir" -type f -name "*.java" -exec dirname {} \; | sort -u | while read -r source_dir; do
+              [ -z "$source_dir" ] && continue
+
+              mapfile -t JAVA_FILES < <(find "$source_dir" -maxdepth 1 -type f -name "*.java" | sort)
+              if [ "${#JAVA_FILES[@]}" -eq 0 ]; then
+                continue
+              fi
+
+              rel_dir="${source_dir#./}"
+              out_dir=".sonar-binaries/${rel_dir}"
+              mkdir -p "$out_dir"
+
+              echo "Compiling Java folder: $source_dir"
+              if javac -cp "$JUNIT_JAR:.sonar-binaries" -d "$out_dir" "${JAVA_FILES[@]}"; then
+                echo "✅ Compilado: $source_dir"
+              else
+                echo "⚠️ Falha ao compilar $source_dir (seguindo execução)"
+              fi
+            done
+          }
+
+          compile_maven_modules "examples"
+          compile_maven_modules "assignments"
+          compile_plain_java "examples"
+          compile_plain_java "assignments"
+      - name: SonarQube Scan
+        if: ${{ secrets.SONAR_TOKEN != '' && secrets.SONAR_HOST_URL != '' }}
+        uses: SonarSource/sonarqube-scan-action@v6
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+      - name: Validate Sonar secrets
+        if: ${{ !(secrets.SONAR_TOKEN != '' && secrets.SONAR_HOST_URL != '') }}
+        run: |
+          echo "❌ Secrets ausentes para Sonar."
+          echo "Configure em Settings > Secrets and variables > Actions:"
+          echo "- SONAR_TOKEN"
+          echo "- SONAR_HOST_URL (https://sonarcloud.io)"
+          exit 1

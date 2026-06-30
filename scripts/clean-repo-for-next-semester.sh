@@ -1,19 +1,19 @@
 #!/bin/bash
+set -euo pipefail
 
-# Diretório base
-BASE_DIR=$(pwd)
+# Diretório base do repositório
+BASE_DIR="$(pwd)"
 
-# 1️⃣ Limpar submissions, mantendo apenas o .gitkeep
-echo "🧹 Limpando submissions/ exceto .gitkeep..."
-find "${BASE_DIR}/assignments" -type d -name submissions | while read submission_dir; do
-  find "$submission_dir" -mindepth 1 -not -name ".gitkeep" -exec rm -rf {} +
-done
+echo "🧹 Limpando diretórios submissions em assignments/ (mantendo .gitkeep)..."
+if [ -d "${BASE_DIR}/assignments" ]; then
+  find "${BASE_DIR}/assignments" -type d -name submissions | while read -r submission_dir; do
+    find "$submission_dir" -mindepth 1 -not -name ".gitkeep" -exec rm -rf {} +
+  done
+fi
 
-# 2️⃣ Limpar arquivos do diretório readings/
-echo "🧹 Limpando arquivos em readings/..."
-find "${BASE_DIR}/readings" -type f -name "*.pdf" -exec rm -f {} \;
+echo "🧹 Limpando binários temporários de submissões em assignments/..."
+if [ -d "${BASE_DIR}/assignments" ]; then
+  find "${BASE_DIR}/assignments" -type d -name bin -exec rm -rf {} +
+fi
 
-echo "🧹 Limpando 'challenges/' (mantendo .gitkeep)..."
-find "${BASE_DIR}/challenges" -mindepth 1 -not -name ".gitkeep" -exec rm -rf {} +
-
-echo "✅ Diretórios limpos com sucesso!"
+echo "✅ Limpeza concluída para a estrutura atual do repositório."

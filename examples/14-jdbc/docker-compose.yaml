@@ -1,0 +1,26 @@
+services:
+  db:
+    image: postgres:18
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      PGPORT: 5431
+    volumes:
+      - pgdata:/var/lib/postgresql
+    network_mode: host
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_LISTEN_PORT: 8889
+    depends_on:
+      - db
+    network_mode: host
+
+volumes:
+  pgdata:

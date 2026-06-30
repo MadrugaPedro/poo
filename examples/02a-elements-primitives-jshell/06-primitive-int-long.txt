@@ -1,0 +1,54 @@
+{
+
+    int lightspeed;
+
+    long days;
+
+    long seconds;
+
+    long distance;
+
+    // approximate speed of light in miles per second
+
+    lightspeed = 186000;
+
+    days = 1000; // specify number of days here
+
+    seconds = days * 24 * 60 * 60; // convert to seconds
+
+    distance = lightspeed * seconds; // compute distance
+
+    System.out.print("In " + days);
+
+    System.out.print(" days light will travel about ");
+
+    System.out.println(distance + " miles.");
+}​
+
+{
+    1+1;
+    int number1;
+    int number2;
+    System.out.println(number1);
+    System.out.println(number2);
+    number1 = 10;
+    number1 = 5;
+    System.out.println(number1);
+    System.out.println(number2);
+    int sum = number1 + number2;
+    System.out.println(sum);
+    int newSum = sum + 3;
+    System.out.println(newSum);
+    int x =(10 + 5) + (2 * 10);
+    System.out.println(x);
+    int y = 12;
+    System.out.println(y);
+    int z = x + y;
+    System.out.println(z);
+
+
+    int a = 5
+    System.out.println(Integer.toBinaryString(a))
+    int a = -5
+    System.out.println(Integer.toBinaryString(a))
+}
