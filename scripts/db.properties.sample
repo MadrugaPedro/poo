@@ -1,0 +1,4 @@
+db.url=jdbc:postgresql://[HOST]:5432/dvdrental
+db.user=[USER]
+db.password=[PASSWORD]]
+csv.path=rentals.csv
