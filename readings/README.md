@@ -1,5 +1,15 @@
 Nesta página você encontra:
+* [Procedimento para submissão da leitura](#procedimento)
 * [Leituras sobre programação orientada a objetos](#leituras-sobre-programação-orientada-a-objetos)
+
+### Procedimento para submissão da leitura
+
+* Procedimento para entrega das leituras
+* Escrever manualmente o resumo em folhar A4 branca
+* Digitalizar em PDF e gravar no diretório readings/seunome-seusobrenome.pdf
+* Enviar Pull Request para o repositório da disciplina
+* Submeter link do Pull Request no Ambiente Virtual
+* Respeitar o prazo para cada texto conforme ambiente virtual
 
 ### Leituras sobre programação orientada a objetos
 
