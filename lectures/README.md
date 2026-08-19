@@ -7,10 +7,10 @@ Nesta página você encontra:
 |#|Conteúdo|Atividade em sala|
 |---|---|---|
 | 1 | [Apresentação da disciplina e contextualização](https://fabriciosantana.github.io/slides/poo/01-introduction.html)| |
-| 2 | [Configuração de ambiente, visão geral do github e procedimento para submissão de tarefas](https://fabriciosantana.github.io/slides/poo/02-configuration.html) | [Configuração do ambiente java](./howto/) e execução do [Hello, World!](./examples/00-hello) |
-| 3 | [Plataforma Java - ferramentas, jshell, java e javac](https://fabriciosantana.github.io/slides/poo/03-platform.html)| [Execução de código no jshell](./examples/02a-elements-primitives-jshell/) |
-| 4 | [Elementos básicos da linguagem Java](https://fabriciosantana.github.io/poo/03-elements)| [Execução de código no jshell](./examples/02a-elements-primitives-jshell/) |
-| 4  | [Programação em Java - custom types, entrada e saída, operadores e controle de fluxo](https://1drv.ms/p/s!Avnn2LcOmn0Y3zPoINGBudmIix2X?e=H5Orac)| [Quizz: plataforma java, elementos da linguagem e tipos primitivos](https://idp2.vevox.com/#/share/AIMIDN010NEQOHBNNEZA/meetingdata/710808/session/714745/pollresults); <br> Análise de código: [estruturas de seleção](./examples/04-selection-statements/) e [estruturas de iteração](./examples/05-iteration-statements/)|
+| 2 | [Configuração de ambiente, visão geral do github e procedimento para submissão de tarefas](https://fabriciosantana.github.io/slides/poo/02-configuration.html) | [Configuração do ambiente java](./howto/) e execução do [Hello, World!](./lectures/00-hello) |
+| 3 | [Plataforma Java - ferramentas, jshell, java e javac](https://fabriciosantana.github.io/slides/poo/03-platform.html)| [Execução de código no jshell](./lectures/02a-elements-primitives-jshell/) |
+| 4 | [Elementos básicos da linguagem Java](https://fabriciosantana.github.io/slides/poo/04-elements.html)| [Execução de código no jshell](./lectures/02a-elements-primitives-jshell/) |
+| 5  | [Programação em Java - custom types, entrada e saída, operadores e controle de fluxo](https://fabriciosantana.github.io/slides/poo/05-flow.html)| [Quizz: plataforma java, elementos da linguagem e tipos primitivos](); <br> Análise de código: [estruturas de seleção](./examples/04-selection-statements/) e [estruturas de iteração](./examples/05-iteration-statements/)|
 | 5 | Continuação aula anterior | Análise de código: [estruturas de seleção](./examples/04-selection-statements/) e [estruturas de iteração](./examples/05-iteration-statements/)|
 | 6 | Continuação aula anterior | |
 | 7 | [Programação Orientada a Objetos em Java - classes, objetos e métodos](https://1drv.ms/p/s!Avnn2LcOmn0Y3z07tfmzQYKuLXJK?e=WDMEbX)| |
