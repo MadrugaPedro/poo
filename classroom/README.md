@@ -5,5 +5,5 @@ soluções em vídeo.
 
 | Tópico | Diretório | Atividades e vídeos das soluções |
 | --- | --- | --- |
-| Controle de fluxo | [`02-flow`](./02-flow/) | 1. Positivo, negativo ou zero — [vídeo em breve](#)<br>2. Aprovação do estudante — [vídeo em breve](#)<br>3. Maior entre três números — [vídeo em breve](#)<br>4. Calculadora simples — [vídeo em breve](#)<br>5. Quantidade de dias do mês — [vídeo em breve](#)<br>6. Soma de 1 até N — [vídeo em breve](#)<br>7. Tabuada — [vídeo em breve](#)<br>8. Contagem regressiva — [vídeo em breve](#)<br>9. Análise dos algarismos — [vídeo em breve](#)<br>10. Número primo — [vídeo em breve](#)<br>11. Sequência de Fibonacci — [vídeo em breve](#)<br>12. Estatísticas de uma turma — [vídeo em breve](#)<br>13. Padrão retangular — [vídeo em breve](#) |
+| Controle de fluxo | [`02-flow`](./02-flow/) | [1. Positivo, negativo ou zero](#)<br>[2. Aprovação do estudante](#)<br>[3. Maior entre três números](#)<br>[4. Calculadora simples](#)<br>[5. Quantidade de dias do mês](#)<br>[6. Soma de 1 até N](#)<br>[7. Tabuada](#)<br>[8. Contagem regressiva](#)<br>[9. Análise dos algarismos](#)<br>[10. Número primo](#)<br>[11. Sequência de Fibonacci](#)<br>[12. Estatísticas de uma turma](#)<br>[13. Padrão retangular](#) |
 
