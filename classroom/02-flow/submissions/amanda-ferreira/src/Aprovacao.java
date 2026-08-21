@@ -19,6 +19,8 @@ import java.util.Scanner;
             else
                 resultado = "NOTA INVALIDA";
 
+            scanner.close();
+
             System.out.println("Média "+ media +" - "+ resultado +"");
         }
     }

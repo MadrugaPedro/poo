@@ -13,6 +13,8 @@ import java.util.Scanner;
             else
                 valor = "ZERO";
 
+            scanner.close();
+
             System.out.println(""+ valor +"");
         }
     } 
