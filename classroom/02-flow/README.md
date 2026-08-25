@@ -199,6 +199,7 @@ Cada termo seguinte é a soma dos dois anteriores.
 Entrada: 7
 Saída: 0 1 1 2 3 5 8
 ```
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQA59nLDsKptQ7ozdi6aYjvrAWUQyHTn--qszXB7xDgF15c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=t8bMBb)
 
 ## Parte III — seleção e iteração combinadas
 
