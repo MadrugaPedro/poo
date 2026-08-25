@@ -33,7 +33,7 @@ Entrada: -3
 Saída: NEGATIVO
 ```
 
-[Vídeo com a solução](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQD3Gn4NjvS0SLWrEKBVn-7nAcCnovcX8_jGvYKgaY8bQGM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TwPCCN)
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQD3Gn4NjvS0SLWrEKBVn-7nAcCnovcX8_jGvYKgaY8bQGM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TwPCCN)
 
 ### 2. Aprovação do estudante
 
@@ -136,6 +136,8 @@ Saída:
 3 x 10 = 30
 ```
 
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQAjxdo48nR2QK2KJjtowYVKAVjg4IcWDVTP2vPVxExjtE0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=eiu3ka)
+
 ### 8. Contagem regressiva
 
 Dado um inteiro positivo, apresente uma contagem regressiva até zero e, ao final, a mensagem `FIM`.
@@ -146,6 +148,8 @@ Dado um inteiro positivo, apresente uma contagem regressiva até zero e, ao fina
 Entrada: 4
 Saída: 4 3 2 1 0 FIM
 ```
+
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQAlDFAd61tbQ71UKzHoLEQOAXadBMroBBgDbCjWTU6zmC0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=zBsXPy)
 
 ### 9. Análise dos algarismos
 
@@ -163,6 +167,8 @@ Entrada: 5724
 Saída: Algarismos: 4 — Soma: 18
 ```
 
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQBjPEEmCXvDQpFR6E-sKfRSAbeMyAjuLFkDS2UQA1wJaWU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=EGfEg1)
+
 ### 10. Número primo
 
 Dado um inteiro, informe se ele é primo. Um número primo é maior que `1` e possui exatamente dois divisores positivos: `1` e ele mesmo.
@@ -178,6 +184,8 @@ Saída: PRIMO
 Entrada: 21
 Saída: NAO PRIMO
 ```
+
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQBtwKgHlSLPQoVJrNRFafgmATvCCnm7R3YWU5sNWHBDR3U?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=1421Ge)
 
 ### 11. Sequência de Fibonacci
 
