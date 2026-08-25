@@ -33,6 +33,8 @@ Entrada: -3
 Saída: NEGATIVO
 ```
 
+[Vídeo com a solução](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQD3Gn4NjvS0SLWrEKBVn-7nAcCnovcX8_jGvYKgaY8bQGM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=TwPCCN)
+
 ### 2. Aprovação do estudante
 
 Dadas duas notas entre `0` e `10`, calcule a média aritmética e apresente:
@@ -50,6 +52,8 @@ Entrada: 8.0 6.0
 Saída: Média: 7.0 — APROVADO
 ```
 
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQCPgWlQFGyHR6CaK9HERGu0AZqM4q2TsyeqqIOBKBRYImM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ri5sZh)
+
 ### 3. Maior entre três números
 
 Dados três números inteiros, apresente o maior. Se o maior valor aparecer mais de uma vez, apresente também `EMPATE NO MAIOR VALOR`.
@@ -60,6 +64,8 @@ Dados três números inteiros, apresente o maior. Se o maior valor aparecer mais
 Entrada: 9 4 9
 Saída: Maior: 9 — EMPATE NO MAIOR VALOR
 ```
+
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQCi6WNzDUb5Sri0qU8jbCNXAdT4w0p2-5QG7uzwF1QWU8U?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=efdr1j)
 
 ### 4. Calculadora simples
 
@@ -76,6 +82,8 @@ Regras:
 Entrada: 20 / 4
 Saída: 5.0
 ```
+
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQAJucmEUCUrTLtnoH-SBKEDAYiNobMEPJKzYnzqQg9KYFE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=CjfNvO)
 
 ### 5. Quantidade de dias do mês
 
@@ -94,6 +102,8 @@ Entrada: 2 2024
 Saída: 29 dias
 ```
 
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQARDlO7IvBOTJF61eHij3ZRAb1qB-OkeZz1J1jgcXYPZHs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=UpdDZc)
+
 ## Parte II — estruturas de iteração
 
 ### 6. Soma de `1` até `N`
@@ -108,6 +118,8 @@ Se `N` não for positivo, apresente `VALOR INVALIDO`.
 Entrada: 5
 Saída: 15
 ```
+
+[Solução em vídeo](https://tecnologiaidp-my.sharepoint.com/:v:/g/personal/830279_idp_edu_br/IQCKU4uSBkkxQoJxqUf1LLntAXc6cvXiVA4nCMPcJcCQJ3c?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=IJUO4G)
 
 ### 7. Tabuada
 
