@@ -1,0 +1,26 @@
+@startuml
+title Exercício 7 — Programa de fidelidade
+skinparam classAttributeIconSize 0
+hide empty members
+
+class ClienteFidelidade {
+  - nome: String
+  - pontos: int
+  - ativo: boolean
+  + ClienteFidelidade(nome: String)
+  + acumularPontos(quantidade: int): void
+  + resgatarPontos(quantidade: int): boolean
+  + desativar(): void
+  + obterNome(): String
+  + obterPontos(): int
+  + estaAtivo(): boolean
+}
+
+class ClienteFidelidadeApp {
+  + {static} main(args: String[]): void
+  - {static} resultado(sucesso: boolean): String
+  - {static} situacao(cliente: ClienteFidelidade): String
+}
+
+ClienteFidelidadeApp ..> ClienteFidelidade : cria e utiliza
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+title Exercício 8 — Carteira e transferência
+skinparam classAttributeIconSize 0
+hide empty members
+
+class Carteira {
+  - titular: String
+  - saldo: double
+  + Carteira(titular: String, saldo: double)
+  + adicionarDinheiro(valor: double): void
+  + gastar(valor: double): boolean
+  + transferirPara(destino: Carteira, valor: double): boolean
+  + obterTitular(): String
+  + obterSaldo(): double
+}
+
+class CarteiraApp {
+  + {static} main(args: String[]): void
+  - {static} exibir(rotulo: String, primeira: Carteira, segunda: Carteira): void
+  - {static} resultado(sucesso: boolean): String
+}
+
+CarteiraApp ..> Carteira : cria e utiliza
+Carteira ..> Carteira : transfere para
+@enduml

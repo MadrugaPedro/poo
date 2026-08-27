@@ -1,0 +1,24 @@
+@startuml
+title Exercício 4 — Produto em estoque
+skinparam classAttributeIconSize 0
+hide empty members
+
+class Produto {
+  - nome: String
+  - precoUnitario: double
+  - quantidade: int
+  + Produto(nome: String, precoUnitario: double, quantidade: int)
+  + adicionarEstoque(quantidade: int): void
+  + retirarEstoque(quantidade: int): boolean
+  + obterNome(): String
+  + obterPrecoUnitario(): double
+  + obterQuantidade(): int
+  + calcularValorEstoque(): double
+}
+
+class ProdutoApp {
+  + {static} main(args: String[]): void
+}
+
+ProdutoApp ..> Produto : cria e utiliza
+@enduml

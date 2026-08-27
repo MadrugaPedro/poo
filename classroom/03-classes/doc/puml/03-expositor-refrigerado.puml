@@ -1,0 +1,24 @@
+@startuml
+title Exercício 3 — Expositor refrigerado
+skinparam classAttributeIconSize 0
+hide empty members
+
+class ExpositorRefrigerado {
+  - {static} ZERO_ABSOLUTO: double
+  - {static} TEMPERATURA_MINIMA_SEGURA: double
+  - {static} TEMPERATURA_MAXIMA_SEGURA: double
+  - temperatura: double
+  + ExpositorRefrigerado()
+  + ExpositorRefrigerado(temperatura: double)
+  + definirTemperatura(temperatura: double): void
+  + obterTemperatura(): double
+  + estaNaFaixaSegura(): boolean
+}
+
+class ExpositorRefrigeradoApp {
+  + {static} main(args: String[]): void
+  - {static} exibir(nome: String, expositor: ExpositorRefrigerado): void
+}
+
+ExpositorRefrigeradoApp ..> ExpositorRefrigerado : cria e utiliza
+@enduml
