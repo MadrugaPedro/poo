@@ -17,7 +17,7 @@ class ClienteFidelidade {
 }
 
 class ClienteFidelidadeReferenciaApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
   - {static} concederBonusPromocional(cliente: ClienteFidelidade, pontos: int): void
   - {static} substituirCliente(cliente: ClienteFidelidade): void
 }

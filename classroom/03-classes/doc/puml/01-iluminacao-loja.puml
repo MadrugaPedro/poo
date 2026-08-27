@@ -16,7 +16,7 @@ class IluminacaoLoja {
 }
 
 class IluminacaoLojaApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
   - {static} exibir(iluminacao: IluminacaoLoja): void
 }
 

@@ -19,7 +19,8 @@ class MaquinaVendas {
 }
 
 class MaquinaVendasApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
+  - {static} demonstrarComprasRecusadas(): void
   - {static} exibirMenu(maquina: MaquinaVendas): void
 }
 

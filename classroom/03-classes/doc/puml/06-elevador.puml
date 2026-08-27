@@ -20,7 +20,7 @@ class Elevador {
 }
 
 class ElevadorApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
   - {static} resultado(sucesso: boolean): String
 }
 

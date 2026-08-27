@@ -16,7 +16,7 @@ class ExpositorRefrigerado {
 }
 
 class ExpositorRefrigeradoApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
   - {static} exibir(nome: String, expositor: ExpositorRefrigerado): void
 }
 

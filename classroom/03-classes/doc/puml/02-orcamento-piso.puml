@@ -17,7 +17,7 @@ class OrcamentoPiso {
 }
 
 class OrcamentoPisoApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
   - {static} exibir(orcamento: OrcamentoPiso): void
 }
 

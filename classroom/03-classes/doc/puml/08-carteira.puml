@@ -15,7 +15,7 @@ class Carteira {
 }
 
 class CarteiraApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
   - {static} exibir(rotulo: String, primeira: Carteira, segunda: Carteira): void
   - {static} resultado(sucesso: boolean): String
 }

@@ -17,7 +17,7 @@ class Produto {
 }
 
 class ProdutoApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
 }
 
 ProdutoApp ..> Produto : cria e utiliza

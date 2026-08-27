@@ -17,7 +17,7 @@ class ClienteFidelidade {
 }
 
 class ClienteFidelidadeApp {
-  + {static} main(args: String[]): void
+  + {static} main(argumentos: String[]): void
   - {static} resultado(sucesso: boolean): String
   - {static} situacao(cliente: ClienteFidelidade): String
 }
