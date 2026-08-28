@@ -1,0 +1,28 @@
+@startuml
+title Exercício 6 — Elevador
+skinparam classAttributeIconSize 0
+hide empty members
+
+class Elevador {
+  - andarAtual: int
+  - ultimoAndar: int
+  - capacidade: int
+  - quantidadePessoas: int
+  + Elevador(ultimoAndar: int, capacidade: int)
+  + entrar(quantidade: int): boolean
+  + sair(quantidade: int): boolean
+  + subir(): boolean
+  + descer(): boolean
+  + obterAndarAtual(): int
+  + obterUltimoAndar(): int
+  + obterCapacidade(): int
+  + obterQuantidadePessoas(): int
+}
+
+class ElevadorApp {
+  + {static} main(argumentos: String[]): void
+  - {static} resultado(sucesso: boolean): String
+}
+
+ElevadorApp ..> Elevador : cria e utiliza
+@enduml

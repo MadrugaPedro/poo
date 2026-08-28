@@ -1,0 +1,28 @@
+@startuml
+title Exercício 10 — Máquina de vendas
+skinparam classAttributeIconSize 0
+hide empty members
+
+class MaquinaVendas {
+  - nomeProduto: String
+  - precoUnitario: double
+  - estoque: int
+  - credito: double
+  + MaquinaVendas(nomeProduto: String, precoUnitario: double, estoque: int)
+  + inserirDinheiro(valor: double): void
+  + comprar(): boolean
+  + cancelar(): double
+  + obterNomeProduto(): String
+  + obterPrecoUnitario(): double
+  + obterEstoque(): int
+  + obterCredito(): double
+}
+
+class MaquinaVendasApp {
+  + {static} main(argumentos: String[]): void
+  - {static} demonstrarComprasRecusadas(): void
+  - {static} exibirMenu(maquina: MaquinaVendas): void
+}
+
+MaquinaVendasApp ..> MaquinaVendas : cria e utiliza
+@enduml

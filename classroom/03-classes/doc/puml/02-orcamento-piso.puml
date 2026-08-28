@@ -1,0 +1,25 @@
+@startuml
+title Exercício 2 — Orçamento de piso
+skinparam classAttributeIconSize 0
+hide empty members
+
+class OrcamentoPiso {
+  - comprimento: double
+  - largura: double
+  - precoPorMetroQuadrado: double
+  + OrcamentoPiso(comprimento: double, largura: double, precoPorMetroQuadrado: double)
+  + obterComprimento(): double
+  + obterLargura(): double
+  + obterPrecoPorMetroQuadrado(): double
+  + calcularArea(): double
+  + calcularComprimentoRodape(): double
+  + calcularPrecoTotal(): double
+}
+
+class OrcamentoPisoApp {
+  + {static} main(argumentos: String[]): void
+  - {static} exibir(orcamento: OrcamentoPiso): void
+}
+
+OrcamentoPisoApp ..> OrcamentoPiso : cria e utiliza
+@enduml

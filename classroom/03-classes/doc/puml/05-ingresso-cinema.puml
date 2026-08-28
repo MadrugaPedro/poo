@@ -1,0 +1,22 @@
+@startuml
+title Exercício 5 — Ingresso de cinema
+skinparam classAttributeIconSize 0
+hide empty members
+
+class IngressoCinema {
+  - tituloFilme: String
+  - precoInteira: double
+  - vendido: boolean
+  + IngressoCinema(tituloFilme: String, precoInteira: double)
+  + vender(meiaEntrada: boolean): double
+  + obterTituloFilme(): String
+  + obterPrecoInteira(): double
+  + estaVendido(): boolean
+}
+
+class IngressoCinemaApp {
+  + {static} main(argumentos: String[]): void
+}
+
+IngressoCinemaApp ..> IngressoCinema : cria e utiliza
+@enduml

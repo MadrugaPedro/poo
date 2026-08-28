@@ -1,0 +1,30 @@
+@startuml
+title Exercício 9 — Duas referências, um objeto
+skinparam classAttributeIconSize 0
+hide empty members
+
+class ClienteFidelidade {
+  - nome: String
+  - pontos: int
+  - ativo: boolean
+  + ClienteFidelidade(nome: String)
+  + acumularPontos(quantidade: int): void
+  + resgatarPontos(quantidade: int): boolean
+  + desativar(): void
+  + obterNome(): String
+  + obterPontos(): int
+  + estaAtivo(): boolean
+}
+
+class ClienteFidelidadeReferenciaApp {
+  + {static} main(argumentos: String[]): void
+  - {static} concederBonusPromocional(cliente: ClienteFidelidade, pontos: int): void
+  - {static} substituirCliente(cliente: ClienteFidelidade): void
+}
+
+ClienteFidelidadeReferenciaApp ..> ClienteFidelidade : referenciaOriginal e outraReferencia
+note on link
+  Duas variáveis podem armazenar cópias
+  da referência para o mesmo objeto.
+end note
+@enduml

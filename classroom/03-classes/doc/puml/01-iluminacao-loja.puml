@@ -1,0 +1,24 @@
+@startuml
+title Exercício 1 — Iluminação de uma loja
+skinparam classAttributeIconSize 0
+hide empty members
+
+class IluminacaoLoja {
+  - setor: String
+  - potenciaEmWatts: double
+  - ligada: boolean
+  + IluminacaoLoja(setor: String, potenciaEmWatts: double)
+  + ligar(): void
+  + desligar(): void
+  + obterSetor(): String
+  + obterPotenciaEmWatts(): double
+  + estaLigada(): boolean
+}
+
+class IluminacaoLojaApp {
+  + {static} main(argumentos: String[]): void
+  - {static} exibir(iluminacao: IluminacaoLoja): void
+}
+
+IluminacaoLojaApp ..> IluminacaoLoja : cria e utiliza
+@enduml
