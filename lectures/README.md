@@ -14,7 +14,7 @@ Nesta página você encontra:
 | 6 | [Controle de fluxo - estruturas de seleção: `if`, `switch` e `? :`](https://fabriciosantana.github.io/slides/poo/06-flow-selection.html)| [Estruturas de seleção](./02-flow/a-selection-statements/) |
 | 7 | [Controle de fluxo - estruturas de iteração: `for`, `while` e `do-while :`](https://fabriciosantana.github.io/slides/poo/07-flow-iteration.html)| [Estruturas de iteração](./02-flow/b-iteration-statements/) |
 | 8  | [Introdução à Orientação a Objetos](https://fabriciosantana.github.io/slides/poo/08-oop.html)| [./03-classes/] |
-| X  | Aulas em revisão | |
+| 9  | [Introdução à Modelagem Orientada a Objetos: relacionamentos entre classes](https://fabriciosantana.github.io/slides/poo/09-inheritance.html) | |
 | 11 | [Coleções genéricas](https://fabriciosantana.github.io/slides/poo/11-collections.html) | |
 | 12 | [Manipulação de arquivos em Java](https://fabriciosantana.github.io/slides/poo/12-file.html) |  |
 | 13 | [Acesso a banco de dados com JDBC](https://fabriciosantana.github.io/slides/poo/13-jdbc.html) | |
