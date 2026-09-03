@@ -91,14 +91,14 @@ Não envie arquivos compilados (`.class`) nem inclua senhas, tokens ou dados pes
 
 | Critério | Valor | Evidências esperadas |
 |---|---:|---|
-| Problema e regras de negócio | 1,0 | Domínio compreensível, três casos de uso e cinco regras coerentes. |
-| Modelagem e responsabilidades | 2,0 | Classes relevantes, relacionamentos adequados e responsabilidades bem distribuídas. |
-| Herança e polimorfismo | 2,0 | Hierarquia coerente, sobrescrita e chamada polimórfica em execução. |
-| Encapsulamento e estado válido | 1,5 | Atributos privados, construtores e métodos que protegem as regras do domínio. |
-| Controle de fluxo, arrays e membro de classe | 1,5 | Seleções e repetições variadas, processamento de objetos em array e uso coerente de `static`. |
-| Validação | 1,0 | Cenários inválidos previstos e mensagens claras. |
-| Funcionamento, organização e documentação | 1,0 | Código compilável, casos demonstráveis, nomes claros e diagrama coerente. |
-| **Total** | **10,0** | |
+| Problema e regras de negócio | 0,30 | Domínio compreensível, três casos de uso e cinco regras coerentes. |
+| Modelagem e responsabilidades | 0,60 | Classes relevantes, relacionamentos adequados e responsabilidades bem distribuídas. |
+| Herança e polimorfismo | 0,60 | Hierarquia coerente, sobrescrita e chamada polimórfica em execução. |
+| Encapsulamento e estado válido | 0,45 | Atributos privados, construtores e métodos que protegem as regras do domínio. |
+| Controle de fluxo, arrays e membro de classe | 0,45 | Seleções e repetições variadas, processamento de objetos em array e uso coerente de `static`. |
+| Validação | 0,30 | Cenários inválidos previstos e mensagens claras. |
+| Funcionamento, organização e documentação | 0,30 | Código compilável, casos demonstráveis, nomes claros e diagrama coerente. |
+| **Total** | **3,00** | |
 
 ## Apresentação
 
