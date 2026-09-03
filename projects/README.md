@@ -10,12 +10,18 @@ Alguns exemplos são: biblioteca, clínica, oficina, escola, eventos, entregas, 
 
 ## Definição do projeto
 
-Antes da implementação, crie um arquivo `PROJETO.md` contendo:
+Antes da implementação, crie um arquivo `README.md` contendo:
 
 1. nome e breve descrição do domínio;
 2. pelo menos **três casos de uso** da aplicação;
 3. pelo menos **cinco regras de negócio**;
 4. diagrama de classes com atributos, métodos e relacionamentos com uma ferramenta de sua escolha.
+
+A imagem do diagrama deve ser salva em `doc/diagrama-classes.png` e incorporada ao `README.md`:
+
+```markdown
+![Diagrama de classes](doc/diagrama-classes.png)
+```
 
 Exemplo de regra de negócio: “um empréstimo não pode ser realizado quando o exemplar estiver indisponível”. Operações genéricas, como “cadastrar clientes”, não são consideradas regras de negócio.
 
@@ -26,7 +32,7 @@ Exemplo de regra de negócio: “um empréstimo não pode ser realizado quando o
 - Utilizar Java 21.
 - Criar pelo menos **quatro classes de domínio**, além da classe que contém o método `main`.
 - Organizar cada classe pública em seu próprio arquivo `.java`.
-- Implementar e demonstrar os três casos de uso descritos no `PROJETO.md`.
+- Implementar e demonstrar os três casos de uso descritos no `README.md`.
 - Manter os atributos de instância privados e proteger o estado dos objetos por meio de construtores e métodos adequados.
 - Manter as regras de negócio nas classes do domínio, sem concentrar toda a lógica no `main`.
 - Modelar pelo menos um relacionamento entre objetos por associação, agregação ou composição.
@@ -68,7 +74,9 @@ Crie sua solução na estrutura abaixo:
 projects/
 └── submissions/
     └── nome-sobrenome/
-        ├── PROJETO.md
+        ├── README.md
+        ├── doc/
+        │   └── diagrama-classes.png
         └── src/
             ├── NomeDaAplicacao.java
             └── ...
