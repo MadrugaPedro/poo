@@ -1,0 +1,31 @@
+@startuml
+title Exercício 2 — Modalidades de entrega
+skinparam classAttributeIconSize 0
+hide empty members
+
+class Entrega {
+  - distanciaEmKm: double
+  - pesoEmKg: double
+  + Entrega(distanciaEmKm: double, pesoEmKg: double)
+  + obterDistanciaEmKm(): double
+  + obterPesoEmKg(): double
+  + calcularFrete(): double
+  + calcularPrazoEmDias(): int
+  + obterDescricao(): String
+}
+
+class EntregaExpressa {
+  + EntregaExpressa(distanciaEmKm: double, pesoEmKg: double)
+  + calcularFrete(): double
+  + calcularPrazoEmDias(): int
+  + obterDescricao(): String
+}
+
+class EntregasApp {
+  + {static} main(argumentos: String[]): void
+  - {static} exibir(entrega: Entrega): void
+}
+
+Entrega <|-- EntregaExpressa
+EntregasApp ..> Entrega : utiliza
+@enduml

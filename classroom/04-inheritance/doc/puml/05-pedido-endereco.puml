@@ -1,0 +1,31 @@
+@startuml
+title Exercício 5 — Pedido com endereço de entrega
+skinparam classAttributeIconSize 0
+hide empty members
+
+class PedidoEntrega {
+  - numero: String
+  - valorTotal: double
+  - endereco: EnderecoEntrega
+  + PedidoEntrega(numero: String, valorTotal: double, logradouro: String, cidade: String, cep: String)
+  + obterNumero(): String
+  + obterValorTotal(): double
+  + obterEnderecoFormatado(): String
+}
+
+class EnderecoEntrega {
+  - logradouro: String
+  - cidade: String
+  - cep: String
+  ~ EnderecoEntrega(logradouro: String, cidade: String, cep: String)
+  + formatar(): String
+  - normalizar(valor: String, padrao: String): String
+}
+
+class PedidoEntregaApp {
+  + {static} main(argumentos: String[]): void
+}
+
+PedidoEntrega "1" *-- "1" EnderecoEntrega : endereco
+PedidoEntregaApp ..> PedidoEntrega : cria e utiliza
+@enduml

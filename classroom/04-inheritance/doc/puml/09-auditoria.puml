@@ -1,0 +1,41 @@
+@startuml
+title Exercício 9 — Auditoria de operações
+skinparam classAttributeIconSize 0
+hide empty members
+
+interface Auditavel {
+  + obterIdentificador(): String
+  + gerarDescricaoAuditoria(): String
+}
+
+class ContratoComercial {
+  - numero: String
+  - parteContratada: String
+  + ContratoComercial(numero: String, parteContratada: String)
+  + obterIdentificador(): String
+  + gerarDescricaoAuditoria(): String
+  - normalizar(valor: String, padrao: String): String
+}
+
+class AcessoSistema {
+  - codigo: String
+  - usuario: String
+  + AcessoSistema(codigo: String, usuario: String)
+  + obterIdentificador(): String
+  + gerarDescricaoAuditoria(): String
+  - normalizar(valor: String, padrao: String): String
+}
+
+class ServicoAuditoria {
+  + registrar(auditavel: Auditavel): void
+}
+
+class AuditoriaApp {
+  + {static} main(argumentos: String[]): void
+}
+
+Auditavel <|.. ContratoComercial
+Auditavel <|.. AcessoSistema
+ServicoAuditoria ..> Auditavel : registra
+AuditoriaApp ..> ServicoAuditoria : utiliza
+@enduml

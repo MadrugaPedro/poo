@@ -1,0 +1,36 @@
+@startuml
+title Exercício 7 — Conteúdos de uma plataforma educacional
+skinparam classAttributeIconSize 0
+hide empty members
+
+abstract class ConteudoDigital {
+  - titulo: String
+  - precoBase: double
+  + ConteudoDigital(titulo: String, precoBase: double)
+  + obterTitulo(): String
+  + obterPrecoBase(): double
+  + {abstract} calcularPreco(): double
+}
+
+class LivroDigital {
+  - taxaEditorial: double
+  + LivroDigital(titulo: String, precoBase: double, taxaEditorial: double)
+  + calcularPreco(): double
+}
+
+class CursoOnline {
+  - duracaoEmHoras: double
+  - valorPorHora: double
+  + CursoOnline(titulo: String, precoBase: double, duracaoEmHoras: double, valorPorHora: double)
+  + calcularPreco(): double
+}
+
+class ConteudosApp {
+  + {static} main(argumentos: String[]): void
+  - {static} exibir(conteudo: ConteudoDigital): void
+}
+
+ConteudoDigital <|-- LivroDigital
+ConteudoDigital <|-- CursoOnline
+ConteudosApp ..> ConteudoDigital : utiliza
+@enduml

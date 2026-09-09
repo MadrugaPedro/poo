@@ -1,0 +1,28 @@
+@startuml
+title Exercício 1 — Planos de uma plataforma de software
+skinparam classAttributeIconSize 0
+hide empty members
+
+class PlanoAssinatura {
+  - nome: String
+  - mensalidade: double
+  + PlanoAssinatura(nome: String, mensalidade: double)
+  + obterNome(): String
+  + obterMensalidade(): double
+  + obterDescricao(): String
+}
+
+class PlanoProfissional {
+  - limiteUsuarios: int
+  + PlanoProfissional(nome: String, mensalidade: double, limiteUsuarios: int)
+  + obterLimiteUsuarios(): int
+}
+
+class PlanosApp {
+  + {static} main(argumentos: String[]): void
+}
+
+PlanoAssinatura <|-- PlanoProfissional
+PlanosApp ..> PlanoAssinatura : cria e utiliza
+PlanosApp ..> PlanoProfissional : cria e utiliza
+@enduml

@@ -1,0 +1,17 @@
+@startuml
+title Exercício 3 — Agenda de atendimentos
+skinparam classAttributeIconSize 0
+hide empty members
+
+class AgendaAtendimentos {
+  + agendar(nomeCliente: String): String
+  + agendar(nomeCliente: String, duracaoEmMinutos: int): String
+  + agendar(nomeCliente: String, duracaoEmMinutos: int, prioritario: boolean): String
+}
+
+class AgendaAtendimentosApp {
+  + {static} main(argumentos: String[]): void
+}
+
+AgendaAtendimentosApp ..> AgendaAtendimentos : cria e utiliza
+@enduml

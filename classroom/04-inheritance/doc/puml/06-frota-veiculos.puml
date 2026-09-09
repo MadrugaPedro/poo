@@ -1,0 +1,36 @@
+@startuml
+title Exercício 6 — Veículos de uma frota
+skinparam classAttributeIconSize 0
+hide empty members
+
+class VeiculoFrota {
+  - placa: String
+  - motor: Motor
+  + VeiculoFrota(placa: String, combustivel: String, potencia: double)
+  + obterPlaca(): String
+  + obterDescricao(): String
+}
+
+class Caminhao {
+  - capacidadeCargaEmKg: double
+  + Caminhao(placa: String, combustivel: String, potencia: double, capacidadeCargaEmKg: double)
+  + obterCapacidadeCargaEmKg(): double
+  + obterDescricao(): String
+}
+
+class Motor {
+  - combustivel: String
+  - potencia: double
+  ~ Motor(combustivel: String, potencia: double)
+  + obterDescricao(): String
+}
+
+class FrotaApp {
+  + {static} main(argumentos: String[]): void
+}
+
+VeiculoFrota <|-- Caminhao
+VeiculoFrota "1" *-- "1" Motor : motor
+FrotaApp ..> VeiculoFrota : cria e utiliza
+FrotaApp ..> Caminhao : cria e utiliza
+@enduml

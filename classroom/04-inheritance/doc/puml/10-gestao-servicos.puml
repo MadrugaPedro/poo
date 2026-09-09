@@ -1,0 +1,49 @@
+@startuml
+title Exercício 10 — Gestão de serviços contratados
+skinparam classAttributeIconSize 0
+hide empty members
+
+interface Cobravel {
+  + calcularValorDevido(): double
+}
+
+interface Cancelavel {
+  + cancelar(): boolean
+}
+
+class AssinaturaAcademia {
+  - mensalidade: double
+  - ativa: boolean
+  + AssinaturaAcademia(mensalidade: double)
+  + calcularValorDevido(): double
+  + cancelar(): boolean
+}
+
+class ReservaEspaco {
+  - quantidadeHoras: int
+  - valorPorHora: double
+  - utilizada: boolean
+  - cancelada: boolean
+  + ReservaEspaco(quantidadeHoras: int, valorPorHora: double)
+  + calcularValorDevido(): double
+  + cancelar(): boolean
+  + registrarUtilizacao(): void
+}
+
+class GestorServicos {
+  + cobrar(servico: Cobravel): void
+  + solicitarCancelamento(servico: Cancelavel): void
+}
+
+class GestaoServicosApp {
+  + {static} main(argumentos: String[]): void
+}
+
+Cobravel <|.. AssinaturaAcademia
+Cancelavel <|.. AssinaturaAcademia
+Cobravel <|.. ReservaEspaco
+Cancelavel <|.. ReservaEspaco
+GestorServicos ..> Cobravel : cobra
+GestorServicos ..> Cancelavel : cancela
+GestaoServicosApp ..> GestorServicos : utiliza
+@enduml

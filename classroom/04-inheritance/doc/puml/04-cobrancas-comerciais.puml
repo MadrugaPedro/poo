@@ -1,0 +1,37 @@
+@startuml
+title Exercício 4 — Cobranças comerciais
+skinparam classAttributeIconSize 0
+hide empty members
+
+class Cobranca {
+  - descricao: String
+  - valorBase: double
+  + Cobranca(descricao: String, valorBase: double)
+  + obterDescricao(): String
+  + obterValorBase(): double
+  + calcularTotal(): double
+}
+
+class CobrancaProduto {
+  + CobrancaProduto(descricao: String, valorBase: double)
+  + calcularTotal(): double
+}
+
+class CobrancaServico {
+  + CobrancaServico(descricao: String, valorBase: double)
+  + calcularTotal(): double
+}
+
+class ProcessadorCobrancas {
+  + processar(cobranca: Cobranca): void
+}
+
+class CobrancasApp {
+  + {static} main(argumentos: String[]): void
+}
+
+Cobranca <|-- CobrancaProduto
+Cobranca <|-- CobrancaServico
+ProcessadorCobrancas ..> Cobranca : processa
+CobrancasApp ..> ProcessadorCobrancas : utiliza
+@enduml

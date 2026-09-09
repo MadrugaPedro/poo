@@ -1,0 +1,41 @@
+@startuml
+title Exercício 8 — Solicitações de suporte
+skinparam classAttributeIconSize 0
+hide empty members
+
+abstract class SolicitacaoAtendimento {
+  - protocolo: String
+  - descricao: String
+  + SolicitacaoAtendimento(protocolo: String, descricao: String)
+  + obterProtocolo(): String
+  + obterDescricao(): String
+  + {abstract} calcularPrioridade(): int
+}
+
+class Incidente {
+  - impacto: int
+  - urgencia: int
+  + Incidente(protocolo: String, descricao: String, impacto: int, urgencia: int)
+  + calcularPrioridade(): int
+  - normalizarNivel(nivel: int): int
+}
+
+class SolicitacaoServico {
+  - usuariosAfetados: int
+  + SolicitacaoServico(protocolo: String, descricao: String, usuariosAfetados: int)
+  + calcularPrioridade(): int
+}
+
+class CentralSuporte {
+  + processar(solicitacao: SolicitacaoAtendimento): void
+}
+
+class CentralSuporteApp {
+  + {static} main(argumentos: String[]): void
+}
+
+SolicitacaoAtendimento <|-- Incidente
+SolicitacaoAtendimento <|-- SolicitacaoServico
+CentralSuporte ..> SolicitacaoAtendimento : processa
+CentralSuporteApp ..> CentralSuporte : utiliza
+@enduml
