@@ -6,7 +6,7 @@ public abstract class ConteudoDigital {
         this.titulo = (titulo == null || titulo.isBlank())
                 ? "Conteúdo sem título"
                 : titulo;
-        this.precoBase = Math.max(0.0, precoBase);
+        this.precoBase = (!Double.isFinite(precoBase) || precoBase < 0.0) ? 0.0 : precoBase;
     }
 
     public String obterTitulo() {

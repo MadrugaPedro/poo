@@ -3,7 +3,7 @@ public class AssinaturaAcademia implements Cobravel, Cancelavel {
     private boolean ativa;
 
     public AssinaturaAcademia(double mensalidade) {
-        this.mensalidade = Math.max(0.0, mensalidade);
+        this.mensalidade = (!Double.isFinite(mensalidade) || mensalidade < 0.0) ? 0.0 : mensalidade;
         this.ativa = true;
     }
 

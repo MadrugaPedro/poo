@@ -6,7 +6,7 @@ public class Cobranca {
         this.descricao = (descricao == null || descricao.isBlank())
                 ? "Cobrança sem descrição"
                 : descricao;
-        this.valorBase = Math.max(0.0, valorBase);
+        this.valorBase = (!Double.isFinite(valorBase) || valorBase < 0.0) ? 0.0 : valorBase;
     }
 
     public String obterDescricao() {

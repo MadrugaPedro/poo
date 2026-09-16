@@ -4,7 +4,9 @@ public class Caminhao extends VeiculoFrota {
     public Caminhao(String placa, String combustivel, double potencia,
                     double capacidadeCargaEmKg) {
         super(placa, combustivel, potencia);
-        this.capacidadeCargaEmKg = Math.max(0.0, capacidadeCargaEmKg);
+        this.capacidadeCargaEmKg = (!Double.isFinite(capacidadeCargaEmKg) || capacidadeCargaEmKg < 0.0)
+                ? 0.0
+                : capacidadeCargaEmKg;
     }
 
     public double obterCapacidadeCargaEmKg() {

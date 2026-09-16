@@ -6,7 +6,7 @@ public class ReservaEspaco implements Cobravel, Cancelavel {
 
     public ReservaEspaco(int quantidadeHoras, double valorPorHora) {
         this.quantidadeHoras = Math.max(0, quantidadeHoras);
-        this.valorPorHora = Math.max(0.0, valorPorHora);
+        this.valorPorHora = (!Double.isFinite(valorPorHora) || valorPorHora < 0.0) ? 0.0 : valorPorHora;
         this.utilizada = false;
         this.cancelada = false;
     }

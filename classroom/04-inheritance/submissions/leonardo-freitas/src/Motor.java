@@ -6,7 +6,7 @@ public class Motor {
         this.combustivel = (combustivel == null || combustivel.isBlank())
                 ? "Combustível não informado"
                 : combustivel;
-        this.potencia = Math.max(0.0, potencia);
+        this.potencia = (!Double.isFinite(potencia) || potencia < 0.0) ? 0.0 : potencia;
     }
 
     public String obterDescricao() {

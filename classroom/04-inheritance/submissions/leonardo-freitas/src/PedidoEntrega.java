@@ -6,7 +6,7 @@ public class PedidoEntrega {
     public PedidoEntrega(String numero, double valorTotal,
                          String logradouro, String cidade, String cep) {
         this.numero = (numero == null || numero.isBlank()) ? "Pedido sem número" : numero;
-        this.valorTotal = Math.max(0.0, valorTotal);
+        this.valorTotal = (!Double.isFinite(valorTotal) || valorTotal < 0.0) ? 0.0 : valorTotal;
         this.endereco = new EnderecoEntrega(logradouro, cidade, cep);
     }
 

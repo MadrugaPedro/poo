@@ -4,7 +4,7 @@ public class PlanoAssinatura {
 
     public PlanoAssinatura(String nome, double mensalidade) {
         this.nome = (nome == null || nome.isBlank()) ? "Plano sem nome" : nome;
-        this.mensalidade = Math.max(0.0, mensalidade);
+        this.mensalidade = (!Double.isFinite(mensalidade) || mensalidade < 0.0) ? 0.0 : mensalidade;
     }
 
     public String obterNome() {

@@ -5,8 +5,8 @@ public class CursoOnline extends ConteudoDigital {
     public CursoOnline(String titulo, double precoBase,
                        double duracaoEmHoras, double valorPorHora) {
         super(titulo, precoBase);
-        this.duracaoEmHoras = Math.max(0.0, duracaoEmHoras);
-        this.valorPorHora = Math.max(0.0, valorPorHora);
+        this.duracaoEmHoras = (!Double.isFinite(duracaoEmHoras) || duracaoEmHoras < 0.0) ? 0.0 : duracaoEmHoras;
+        this.valorPorHora = (!Double.isFinite(valorPorHora) || valorPorHora < 0.0) ? 0.0 : valorPorHora;
     }
 
     @Override

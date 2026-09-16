@@ -3,7 +3,7 @@ public class LivroDigital extends ConteudoDigital {
 
     public LivroDigital(String titulo, double precoBase, double taxaEditorial) {
         super(titulo, precoBase);
-        this.taxaEditorial = Math.max(0.0, taxaEditorial);
+        this.taxaEditorial = (!Double.isFinite(taxaEditorial) || taxaEditorial < 0.0) ? 0.0 : taxaEditorial;
     }
 
     @Override

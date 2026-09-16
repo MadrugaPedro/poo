@@ -3,8 +3,8 @@ public class Entrega {
     private double pesoEmKg;
 
     public Entrega(double distanciaEmKm, double pesoEmKg) {
-        this.distanciaEmKm = Math.max(0.0, distanciaEmKm);
-        this.pesoEmKg = Math.max(0.0, pesoEmKg);
+        this.distanciaEmKm = (!Double.isFinite(distanciaEmKm) || distanciaEmKm < 0.0) ? 0.0 : distanciaEmKm;
+        this.pesoEmKg = (!Double.isFinite(pesoEmKg) || pesoEmKg < 0.0) ? 0.0 : pesoEmKg;
     }
 
     public double obterDistanciaEmKm() {
